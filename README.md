@@ -1,6 +1,6 @@
 # Unix Game Challenges
 
-This repository contains the Unix Game ([https:://unixgame.io](https://www.unixgame.io/)) challenges and metadata, released under the permissive CC BY-NC license to foster external contributions.
+This repository contains the Unix Game ([https:://unixgame.io](https://www.unixgame.io/)) challenges and metadata, released under the permissive CC BY-NC 2.0 license to foster external contributions.
 
 ## Contest Data Format
 
