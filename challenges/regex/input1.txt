@@ -1,0 +1,11 @@
+Valid Examples:
+---------------
+abc
+abbbc
+abbbbbc
+
+Invalid Examples:
+-----------------
+ac
+aaabbc
+bcc

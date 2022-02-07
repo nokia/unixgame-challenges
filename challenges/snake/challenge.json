@@ -1,0 +1,21 @@
+{
+    "name": "snake",
+    "blocks": [
+    ],
+    "outputRenderer": {
+        "createWidget": "snakeOutputRenderer",
+        "hook": "snakeHook"
+    },
+    "questions": [
+        {
+            "question": 1,
+            "solutions": [
+                    "turn left\nmove forward\nmove forward\nturn right\nmove forward\nmove forward\nturn left\nmove forward",
+                    "move forward\nturn left\nmove forward\nmove forward\nturn right\nmove forward\nturn left\nmove forward",
+                    "move forward\nturn left\nmove forward\nturn right\nmove forward\nturn left\nmove forward\nmove forward",
+                    "turn left\nmove forward\nturn right\nmove forward\nmove forward\nturn left\nmove forward\nmove forward",
+                    "turn left\nmove forward\nturn right\nmove forward\nturn left\nmove forward\nturn right\nmove forward\nturn left\nmove forward"
+            ]
+        }
+    ]
+}

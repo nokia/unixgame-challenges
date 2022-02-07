@@ -1,0 +1,21 @@
+{
+    "name": "turing_awards",
+    "questions": [
+        {
+            "question": 1,
+            "solutions": [
+                "4"
+            ]
+        },{
+            "question": 2,
+            "solutions": [
+                "Alfred V. Aho\nDennis MacAlistair Ritchie\nKenneth Lane Thompson\nRichard Wesley Hamming"
+            ]
+        },{
+            "question": 3,
+            "solutions": [
+                "dmr"
+            ]
+        }
+    ]
+}

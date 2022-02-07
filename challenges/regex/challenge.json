@@ -1,0 +1,346 @@
+{
+    "name": "regex",
+    "blocks": [
+    ],
+    "split": [ 50, 50],
+    "questions": [
+        {
+            "question": 1,
+            "outputRenderer": {
+                "createWidget": "regexOutputRenderer",
+                "hook": "regexHook"
+            },
+            "input": "",
+            "blocks": [
+              "guess_regex",
+              "c",
+              "ab*",
+              "a.b",
+              "a.b.c",
+              "ab+",
+              "a(b)?"
+          ],
+            "solutions": [
+                "abc\nabbbc\nabbbbbc",
+                "You Win!"
+            ],
+            "initialPipeline": [
+                {"type":"guess_regex","args":[]}
+            ],
+            "maxblocks": 7,
+            "validator": {
+                "name": "guessREValidator",
+                "args": { 
+                    "hint": "guess the regex",
+                    "re": "ab+c"
+                }
+            }
+        },
+        {
+            "question": 2,
+            "split": [ 70, 30],
+            "outputRenderer": {
+                "createWidget": "regexOutputRenderer",
+                "hook": "regexHook"
+            },
+            "input": "",
+            "blocks": [
+                "guess_regex",
+                "regex_or",
+                "regex_in",
+                "regex_group",
+                "regex_multi",
+                "regex_*",
+                "regex_+",
+                "[0-9]",
+                "[1-9]",
+                "0",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9"
+            ],
+            "vertical": false,
+            "solutions": [
+                "You Win!"
+            ],
+            "initialPipeline": [
+                {"type":"guess_regex","args":[]}
+            ],
+            "maxblocks": 20,
+            "validator": {
+                "name": "guessREValidator",
+                "args": { 
+                    "hint": "match positive integers without leading zeroes (ie not 007)",
+                    "re": "(0|([1-9][0-9]*))"
+                }
+            }
+        },
+        {
+            "question": 3,
+            "split": [ 70, 30],
+            "outputRenderer": {
+                "createWidget": "regexOutputRenderer",
+                "hook": "regexHook"
+            },
+            "input": "",
+            "blocks": [
+              "guess_regex",
+              "regex_or",
+              "regex_in",
+              "regex_group",
+              "regex_multi",
+              "regex_*",
+              "regex_+",
+              "[0-9]",
+              "[1-9]",
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9"
+          ],
+            "solutions": [
+                "You Win!"
+            ],
+            "initialPipeline": [
+                {"type":"guess_regex","args":[]}
+            ],
+            "maxblocks": 20,
+            "validator": {
+                "name": "guessREValidator",
+                "args": { 
+                    "hint": "match even (positive) integers (leading zeroes are allowed)",
+                    "re": "[0-9]*[02468]"
+                }
+            }
+        },
+        {
+            "question": 4,
+            "split": [ 70, 30],
+            "outputRenderer": {
+                "createWidget": "regexOutputRenderer",
+                "hook": "regexHook"
+            },
+            "input": "",
+            "blocks": [
+              "guess_regex",
+              "regex_or",
+              "regex_in",
+              "regex_group",
+              "regex_multi",
+              "regex_*",
+              "regex_+",
+              "a",
+              "b"
+          ],
+            "solutions": [
+                "You Win!"
+            ],
+            "initialPipeline": [
+                {"type":"guess_regex","args":[]}
+            ],
+            "maxblocks": 20,
+            "validator": {
+                "name": "guessREValidator",
+                "args": { 
+                    "hint": "match words over the alphabet {a, b} with at most one 'a'",
+                    "reAlt": "(b+|(b*ab*)",
+                    "re": "b*(a|b)b*"
+                }
+            }
+        },
+        {
+            "question": 5,
+            "split": [ 70, 30],
+            "outputRenderer": {
+                "createWidget": "regexOutputRenderer",
+                "hook": "regexHook"
+            },
+            "input": "",
+            "blocks": [
+              "guess_regex",
+              "regex_or",
+              "regex_in",
+              "regex_group",
+              "regex_multi",
+              "regex_*",
+              "regex_+",
+              "a",
+              "b"
+          ],
+            "solutions": [
+                "You Win!"
+            ],
+            "initialPipeline": [
+                {"type":"guess_regex","args":[]}
+            ],
+            "maxblocks": 20,
+            "validator": {
+                "name": "guessREValidator",
+                "args": { 
+                    "hint": "match words over the alphabet {a, b} with at least one 'a'",
+                    "re": "(b*ab*)+",
+                    "reOrig": "(a|b)*ab*"
+                }
+            }
+        },
+        {
+            "question": 6,
+            "split": [ 30, 70],
+            "outputRenderer": {
+                "createWidget": "regexOutputRenderer",
+                "hook": "regexHook"
+            },
+            "input": "",
+            "blocks": [
+              "guess_power"
+          ],
+            "solutions": [
+                "You Win!"
+            ],
+            "initialPipeline": [
+                {"type":"guess_power","args":[]}
+            ],
+            "maxblocks": 5,
+            "validator": {
+                "name": "guessREValidator",
+                "args": { 
+                    "hint": "match all strings of lowercase letters where the letters appear in ascending lexicographical order",
+                    "re": "a*b*c*d*e*f*g*h*i*j*k*l*m*n*o*p*q*r*s*t*u*v*w*x*y*z*",
+                    "charRange": [97, 122]
+                }
+            }
+        },
+        {
+            "question": 7,
+            "split": [ 30, 70],
+            "outputRenderer": {
+                "createWidget": "regexOutputRenderer",
+                "hook": "regexHook"
+            },
+            "input": "",
+            "blocks": [
+              "guess_regex",
+              "guess_power",
+              "regex_or",
+              "regex_in",
+              "regex_not_in",
+              "regex_group",
+              "regex_multi",
+              "regex_*",
+              "regex_+",
+              "a",
+              "e",
+              "i",
+              "o",
+              "u"
+          ],
+            "solutions": [
+                "You Win!"
+            ],
+            "initialPipeline": [
+                {"type":"guess_regex","args":[]}
+            ],
+            "maxblocks": 50,
+            "validator": {
+                "name": "guessREValidator",
+                "args": { 
+                    "hint": "match all strings of lowercase letters where the five vowels appear in ascending lexicographical order",
+                    "re": "[^eiou]*a[^aiou]*e[^aeou]*i[^aeiu]*o[^aeio]*u[^aeio]*",
+                    "charRange": [97, 122]
+                }
+            }
+        },
+        {
+            "question": 8,
+            "split": [ 25, 75],
+            "outputRenderer": {
+                "createWidget": "regexOutputRenderer",
+                "hook": "regexHook"
+            },
+            "input": "mRNA.txt",
+            "blocks": [
+              "guess_regex",
+              "regex_or",
+              "regex_in",
+              "regex_group",
+              "regex_multi",
+              "regex_*",
+              "regex_+",
+              "ATG",
+              "A",
+              "T",
+              "G",
+              "C"
+          ],
+            "solutions": [
+                "You Win!"
+            ],
+            "initialPipeline": [
+                {"type":"guess_regex","args":[]}
+            ],
+            "maxblocks": 30,
+            "validator": {
+                "name": "guessREValidator",
+                "args": { 
+                    "hint": "build the regex that matches the mRNA structure described in the text",
+                    "re": "ATG[ATGC]*T(AA|AG|GA)(A){5}A*"
+                }
+            },
+            "reward": "(exercise based on <a target='_blank' href='https://stackoverflow.com/questions/54931073/regex-to-match-mrna-sequences'>this</a> Stack Overflow question.)",
+            "dialog": {
+                "width": 400,
+                "height": 126
+            }
+
+        },
+        {
+            "question": 9,
+            "input": "input9.txt",
+            "blocks": [
+              "match_regex",
+              "regex_or",
+              "regex_group",
+              "regex_multi",
+              "h",
+              "k",
+              "m",
+              "n",
+              "u2",
+              "apua'a"
+            ],
+            "maxblocks": 17,
+            "codemirror": true,
+            "solutions": [
+                "(((h|m)u){2}){2}(((n|k)u){2}){2}apua'a",
+                "You Win!"
+            ],
+            "initialPipeline": [
+                {"type":"match_regex","args":[]}
+            ],
+            "validator": {
+                "name": "matchREValidator",
+                "args": {
+                    "inputFile": "./challenges/regex/input9.txt",
+                    "wordToGuess": "humuhumunukunukuapua'a"
+                }
+            },
+            "reward": "Here is your reward <i class='far fa-smile-wink' style='font-size:100'></i><br><br><iframe width='560' height='315' src='https://www.youtube.com/embed/mjcuxw_HJtw?start=44' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>",
+            "dialog": {
+                "width": 560,
+                "height": 465
+            }
+        }
+    ]
+}

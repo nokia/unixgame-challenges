@@ -1,0 +1,13 @@
+{
+    "name": "abc_poem",
+    "blocks": [        
+    ],
+    "questions": [
+        {
+            "question": 1,
+            "solutions": [
+                "awk\nbiff\ncc\ndd\nemacs\nfsck\ngrep\nhalt\nindent\njoin\nkill\nlex\nmore\nnice\nod\npasswd\nquota\nranlib\nspell\ntrue\nuniq\nvi\nwhoami\nX\nyes\nzcat\n"
+            ]
+        }
+    ]
+}

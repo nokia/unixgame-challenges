@@ -1,0 +1,14 @@
+{
+    "name": "awk",
+    "blocks": [
+    ],
+    "maxblocks": 12,
+    "questions": [
+        {
+            "question": 1,
+            "solutions": [
+                "awk"
+            ]
+        }
+    ]
+}

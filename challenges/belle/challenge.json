@@ -1,0 +1,36 @@
+{
+    "name": "belle",
+    "questions": [
+        {
+            "question": 1,
+            "solutions": [
+                "41"
+            ]
+        },{
+            "question": 2,
+            "solutions": [
+                "10"
+            ]
+        },{
+            "question": 3,
+            "solutions": [
+                "2"
+            ]
+        },{
+            "question": 4,
+            "solutions": [
+                "   3 Q\n   2 N\n   2 B\n   1 K"
+            ]
+        },{
+            "question": 5,
+            "solutions": [
+                "   3 Q\n   2 P\n   2 N\n   2 B\n   1 K\n"
+            ]
+        },{
+            "question": 6,
+            "solutions": [
+                "P"
+            ]
+        }
+    ]
+}

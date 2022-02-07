@@ -1,0 +1,40 @@
+{
+    "name": "unix_evolution",
+    "questions": [
+        {
+            "question": 1,
+            "solutions": [
+                "7"
+            ]
+        },{
+            "question": 2,
+            "solutions": [
+                "Murray Hill", "murray hill"
+            ]
+        },{
+            "question": 3,
+            "solutions": [
+                "K. Thompson, Ritchie, M. D. McIlroy, J. F. Ossanna",
+                "K. Thompson\nRitchie\nM. D. McIlroy\nJ. F. Ossanna"
+            ]
+        },{
+            "question": 4,
+            "solutions": [
+                "enthusiastically\nAcknowledgements",
+                "Acknowledgements\nenthusiastically",
+                "enthusiastically Acknowledgements",
+                "Acknowledgements enthusiastically"
+            ]
+        },{
+            "question": 5,
+            "solutions": [
+                "terminal\nThompson",
+                "Thompson\nterminal",
+                "terminal Thompson",
+                "Thompson terminal",
+                "thompson\nterminal\nlanguage",
+                "thompson terminal language"
+            ]
+        }
+    ]
+}

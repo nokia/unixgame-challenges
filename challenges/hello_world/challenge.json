@@ -1,0 +1,35 @@
+{
+    "name": "hello_world",
+    "blocks": [
+    ],
+    "questions": [
+        {
+            "question": 1,
+            "solutions": [
+                "Aho\nBourne\nCherry\nChesson\nCondon\nDolotta\nFeldman\nFraser\nHaight\nJohnson\nKernighan\nLesk\nMaranzano\nMcIlroy\nMcMahon\nMorris\nOsanna\nPlauger\nReiser\nRitchie\nTague\nThompson\nWeinberger"
+            ],
+            "initialPipeline": [
+                {"type":"cut -d -f","args":["[whitespace]","2"]}
+            ],
+            "maxblocks": 7
+        },
+        {
+            "question": 2,
+            "solutions": [
+                "Thompson\nRitchie"
+            ],
+            "initialPipeline": [
+                {"type":"cut -d -f","args":["[whitespace]","2"]}
+            ]
+        },
+        {
+            "question": 3,
+            "solutions": [
+                   "3 Joe\n   2 Steve\n   1 Ted\n   1 Stu\n   1 Sandy\n   1 Peter\n   1 Mike\n   1 Lorinda\n   1 Lee\n   1 Ken\n   1 John\n   1 Greg\n   1 Doug\n   1 Dick\n   1 Dennis\n   1 Brian\n   1 Bob\n   1 Bill\n   1 Berk\n   1 Al"
+            ],
+            "initialPipeline": [
+                {"type":"cut -d -f","args":["[whitespace]","1"]}
+            ]
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "name": "unix_versions",
+    "questions": [
+        {
+            "question": 1,
+            "solutions": [
+                "3"
+            ]
+        },{
+            "question": 2,
+            "solutions": [
+                "PDP-11/70"
+            ]
+        },{
+            "question": 3,
+            "solutions": [
+                "60s\n70s\n80s\n90s"
+            ]
+        }
+    ]
+}

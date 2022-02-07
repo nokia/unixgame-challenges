@@ -1,0 +1,16 @@
+{
+    "name": "hamming_medal",
+    "questions": [
+        {
+            "question": 1,
+            "solutions": [
+                "1990"
+            ]
+        },{
+            "question": 2,
+            "solutions": [
+                "DAVID"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,68 @@
+{
+    "name": "poems",
+    "questions": [
+        {
+            "question": 1,
+            "input": "input0.txt",
+            "solutions": [
+                "PORT"
+            ]
+        },
+        {
+            "question": 2,
+            "input": "input1.txt",
+            "solutions": [
+                "BELL"
+            ]
+        },
+        {
+            "question": 3,
+            "input": "input2.txt",
+            "solutions": [
+                "FLAMINGO"
+            ]
+        },
+        {
+            "question": 4,
+            "input": "input3.txt",
+            "solutions": [
+                "SHELL"
+            ]
+        },
+        {
+            "question": 5,
+            "input": "input4.txt",
+            "solutions": [
+                "CLOCK"
+            ]
+        },
+        {
+            "question": 6,
+            "input": "input5.txt",
+            "solutions": [
+                "GREP"
+            ]
+        },
+        {
+            "question": 7,
+            "input": "input6.txt",
+            "solutions": [
+                "UNIX"
+            ]
+        },
+        {
+            "question": 8,
+            "input": "input7.txt",
+            "solutions": [
+                "TELE"
+            ]
+        },
+        {
+            "question": 9,
+            "input": "input8.txt",
+            "solutions": [
+                "FIFTYANN"
+            ]
+        }
+    ]
+}
